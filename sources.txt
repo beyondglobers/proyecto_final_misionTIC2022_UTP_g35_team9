@@ -1,0 +1,6 @@
+https://www.youtube.com/watch?v=lYVKbAn5Od0
+
+https://colinmackay.scot/tag/express-ejs-layouts/
+
+https://raddy.co.uk/blog/how-to-build-a-recipe-blog-using-node-js-and-mongodb-express-ejs-mongoose-crud/
+

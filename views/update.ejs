@@ -1,0 +1,75 @@
+<div class="center-content">
+
+    <div><a href="/stock">Display stock</a></div>
+
+</div>
+
+<div class="center-content">
+
+    <h3>Update Data</h3>
+
+</div>
+
+<div class="center-content">
+
+    <div class="left-content">
+
+        <form action="/update" method="post">
+
+            <div class="input">
+                <label for="id">ID: <%=data.my_id%></label>
+                <input type="hidden" name="id" value="<%=data.my_id%>">
+                <!-- <input type="text" id="id" name="id"> -->
+            </div>
+            <div class="input">
+                <label for="name">Nombre: <%=data.name%></label>
+                <input type="hidden" name="name" value="<%=data.name%>">
+                <!-- <input type="text" id="title" name="title"> -->
+            </div>
+            <div class="input">
+                <label for="amount">Amount: <%=data.amount%> </label>
+                <div>
+                    Nuevas unidades: <br><input type="text" id="" name="amount" class="input-height">
+                </div>
+
+            </div>
+            <!-- <div class="input">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author">
+        </div> -->
+            <div class="my-padding">
+                <button type="submit" class="my-button" id="myButton">Agregar</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+<!-- <script>
+// https://stackoverflow.com/questions/32702366/basic-alerts-from-node-js
+$( "#myButton" ).click(function() {
+  alert( "Handler for .click() called." );
+})
+
+function save(){
+
+  var data = {};
+  data.email = document.getElementById("email");
+  data.password = document.getElementById("password");
+
+  $.ajax({
+    type: 'POST',
+    data: JSON.stringify(data),
+    cache: false,
+    contentType: 'application/json',
+    datatype: "json",
+    url: '/',
+    success: function(returns){
+        if (returns) 
+            alert("User save");
+        else
+            alert("Error: user not save");
+    }
+  });
+</script> -->

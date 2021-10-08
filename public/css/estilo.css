@@ -1,0 +1,296 @@
+*{
+    margin: 0px auto;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  
+  }
+
+  #head{
+    color: white;
+    background-color: #424242;
+    padding: 10px;
+    width: 90%;
+    margin: 0px auto;
+    font-family: 'Arial';
+    
+
+  }
+.container-fluid{
+      padding: auto;
+      min-width : 480px  ;
+      display: flex;
+      flex-wrap: wrap;
+      
+
+}
+
+.center-content{
+	padding: auto;
+	text-align: center;
+}
+
+.left-content{
+	/* padding: auto; */
+	text-align: left;
+	display:inline-block;
+	padding:5%;
+}
+
+.my-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+}
+
+.my-button:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.my-button:active {
+  top: -1px;
+}
+
+
+.my-padding {
+	/* padding:20%; */
+	padding-top: 25px;
+}
+
+.input-height {
+	
+	font-size: inherit;
+	
+}
+
+.stocks {
+	
+	font-size: inherit;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	
+}
+
+.my-dropdown {
+  /* background-color: #4CAF50; /* Green */ */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.my-upload {
+  /* background-color: #4CAF50; /* Green */ */
+  border: none;
+  color: black;
+  /* padding: 15px 32px; */
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+
+
+#texto{
+    width: 80%;
+    margin: 0px auto;
+    
+}
+
+table{
+    background-color: rgb(223, 230, 216);
+    width: 90%;
+    margin: 0px auto;
+    border-collapse: collapse;
+
+}
+th,td{
+    border:solid 1px rgb(255, 254, 254);
+    padding: 15px ;
+    }
+thead{
+    background-color: rgb(182, 171, 135);
+    border-bottom: solid 5px rgb(255, 254, 254);
+    color: white;
+    
+    }
+
+body{
+      background: rgb(199, 199, 199);
+      
+  }
+header{
+    width: 100%;
+    margin: 0px auto;
+    
+
+  }
+  
+  .navegacion{
+      width: 90%;
+      margin: 0px auto;
+      background: black;
+  }
+  
+  .navegacion ul{
+      list-style: none;
+      width: 90%;
+      margin: 0px auto;
+  }
+  
+  
+  .menu > li{
+      position:relative ;
+      
+      display: inline-block;
+
+  }
+  
+  .menu > li a{
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      font-family: 'Arial Black';
+      text-decoration: none;
+      
+  }
+  
+  .menu li a:hover{
+      color: gray;
+      transition: all .3s;
+  
+  }
+  /*Submenu*/
+  
+  .submenu{
+      position: absolute;
+      background: black;
+      width: 90%;
+      display: none;
+      margin: 0px auto;
+  
+  }
+  .submenu li a{
+     display: block;
+     padding:auto ;
+     color: white;
+     font-family: 'Arial';
+     text-decoration: none;
+  
+  }
+  
+  .menu li:hover .submenu{
+      display:block;
+  }
+
+  .homer{
+    width: 90%;
+    margin: 0px auto;
+    max-height: 180px;
+  }
+  
+  #cuerpo{
+    background-color: white;
+    color: black;
+    margin: 0px auto;
+    width: 90%;
+    text-align: center;
+    font-family: 'Arial';
+    font-size: small;
+    height: auto;
+}
+
+/*FOOT*/
+#foot{
+    text-align: center;
+    width: 90%;
+    margin: 0px auto;
+    max-height: 150px;
+}
+ .navegacion2{
+      width: 100%;
+      margin: 0px auto;
+      background: black;
+  }
+  
+  .navegacion2 ul{
+      list-style: none;
+  }
+  
+  .foot > li{
+      position: relative;
+      display: inline-block;
+  }
+  
+  .foot > li a{
+      display: block;
+      padding: 10px;
+      color: white;
+      font-family: 'Bahnschrift Light';
+      text-decoration: none;
+  }
+  
+  .foot li a:hover{
+      color: gray;
+      transition: all .3s;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 300px;
+    margin:20px;
+    display: inline-block;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+	.cardImage {
+    width: 100%;  
+	height: 100%;
+  }
+  
+  .wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+}
+
+
+
+
+

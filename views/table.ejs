@@ -1,0 +1,105 @@
+<div class="center-content">
+
+  <div class="d-flex text-dark">
+    <a href="/uploadForm">Upload files</a>
+    <a href="/addTab">Add item</a>
+
+    <div class="center-content">
+
+      <h3>Show data</h3>
+
+    </div>
+
+    <div class="stocks">
+
+
+      <form action="/environments" method="POST" name="thisform">
+        <select name="select_name" class="my-dropdown">
+          <% if(Data1.length!=0){ var i=1; Data1.forEach(function(data){ %>
+
+            <option value="<%=data%>">
+              <%=data%>
+            </option>
+
+            <% i++; }) %>
+
+              <% } else{ %>
+                <option value="empty">empty</option>
+                <% } %>
+
+                  <!-- <option value="montlyStock1">montlyStock1</option>
+            <option value="montlyStock2">montlyStock2</option>
+            <option value="montlyStock3">montlyStock3</option> -->
+                  <!-- <option value="name3">name3</option> -->
+        </select>
+        <!-- <select name="select_region">
+              <option value="region1">region1</option>
+              <option value="region2">region2</option>
+              <option value="region3">region3</option>
+           </select> -->
+        <input type="submit" value="Mostrar" class="my-button" />
+      </form>
+
+
+    </div>
+
+
+  </div>
+</div>
+
+
+<div>
+  <table border="1">
+    <tr>
+      <th>S.No</th>
+      <th>id</th>
+      <th>Name</th>
+      <th>Amount</th>
+      <th>Categoria</th>
+      <th>Desactualizar</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+
+    <% if(Data2.length!=0){ var i=1; Data2.forEach(function(data){ %>
+      <tr>
+        <td>
+          <%=i %>
+        </td>
+        <td>
+          <%=data.my_id %>
+        </td>
+        <td>
+          <%=data.name %>
+        </td>
+        <td>
+          <%=data.amount %>
+        </td>
+        <td>
+          <%=data.category %>
+        </td>
+        <td>
+          <%=data.desactualizar %>
+        </td>
+        <!-- <td><%=data.photo_id %></td> -->
+
+        <% if(isStock){ %>
+          <td><a href="/edit?id=<%=data.my_id%>">Edit</a></td>
+          <td><a href="/delete?id=<%=data.my_id%>">Delete</a></td>
+        <% } else { %>
+
+          <td><a href="/edit?id=<%=data.my_id%>"></a></td>
+          <td><a href="/delete?id=<%=data.my_id%>"></a></td>
+        <% } %>
+
+      </tr>
+
+      <% i++; }) %>
+        <% } else{ %>
+          <tr>
+            <td colspan="8">No Data Found</td>
+          </tr>
+          <% } %>
+
+  </table>
+</div>

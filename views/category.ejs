@@ -1,0 +1,22 @@
+<!-- <div class="pricing1box"> -->
+<div id="cuerpo">
+
+    <% for(var i=0;i < tasks.length;i++){ %>
+        <div class="card">
+            <!-- style="width:100%" -->
+            <img src="images/<%=tasks[i].photo_id%>" alt="Imagen Producto" class="cardImage">
+            <!--<img src="images/fondo.png" alt="Imagen Producto" style="width:100%">-->
+            <h1>
+                <%=tasks[i].name%>
+            </h1>
+            <h6>IDENTIFICADOR DE PRODUCTO: <%=tasks[i].my_id%>
+            </h6>
+            <h6>UNIDADES: <%=tasks[i].amount%>
+            </h6>
+            <h6>CATEGORÍA: <%=tasks[i].category%>
+            </h6>
+            <p><button>Añadir al carrito</button></p>
+        </div>
+        <%}%>
+
+</div>

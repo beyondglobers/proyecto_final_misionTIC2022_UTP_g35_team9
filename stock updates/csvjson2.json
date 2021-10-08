@@ -1,0 +1,42 @@
+[
+  {
+    "my_id": 134579,
+    "name": "tenis nike 300",
+    "amount": 4,
+    "category": "zapatos",
+    "photo_id": "zapatos",
+    "desactualizar": "no"
+  },
+  {
+    "my_id": 134580,
+    "name": "crema dental",
+    "amount": 3,
+    "category": "hogar",
+    "photo_id": "cremaDental",
+    "desactualizar": "no"
+  },
+  {
+    "my_id": 134581,
+    "name": "olla arrocera",
+    "amount": 2,
+    "category": "hogar",
+    "photo_id": "ollaArrocera",
+    "desactualizar": "no"
+  },
+  {
+    "my_id": 134584,
+    "name": "medias",
+    "amount": 30,
+    "category": "hogar",
+    "photo_id": "medias",
+    "desactualizar": "no"
+  },
+  {
+    "my_id": 134585,
+    "name": "martillo",
+    "amount": 25,
+    "category": "herramientas",
+    "photo_id": "martillo",
+    "desactualizar": "no"
+  }
+]

@@ -1,0 +1,78 @@
+<!-- <div><a href="/stock">Display stock</a></div>
+
+<div>
+
+    <h3>Add product</h3>
+
+    <form action="/add" method="post">
+
+        <div class="input">
+            <label for="id">ID:</label>
+            <input type="text" id="" name="id">
+        </div>
+        <div class="input">
+            <label for="name">Nombre:</label>
+            <input type="text" id="" name="name">
+            <input type="hidden" name="photo_id" value="">
+        </div>
+        <div class="input">
+            <label for="amount">Amount:</label>
+            <input type="text" id="" name="amount">
+        </div>
+        <div class="input">
+            <label for="category">Categoria:</label>
+            <input type="text" id="" name="category">
+        </div>
+        <div class="input">
+            <label for="desactualizar">Desactualizar:</label>
+            <input type="text" id="" name="desactualizar">
+        </div>
+
+
+        <button type="submit">ADD</button>
+
+    </form>
+
+</div> -->
+
+
+
+
+<div class="center-content">
+
+    <div><a href="/stock">Display stock</a></div>
+
+</div>
+
+<div class="center-content">
+
+    <h3>Add product</h3>
+
+</div>
+
+
+<div class="center-content">
+
+    <div class="left-content">
+
+        <!-- autocomplete="off" -->
+        <form action="/addFormidable" enctype="multipart/form-data" method="post">
+            
+            <div>ID: <br><input type="text" name="id" id="fileName" class="input-height"/></div>
+            <div>Nombre: <br><input type="text" name="name" id="fileName" class="input-height"/></div>
+            <div>Cantidad: <br><input type="text" name="amount" id="fileName" class="input-height"/></div>
+            <div>Categoria: <br><input type="text" name="category" id="fileName" class="input-height"/></div>
+
+            <div>Imagen: <br><input type="file" name="file1" multiple="multiple" class="input-height"/></div>
+
+            <input type="hidden" name="desactualizar" value="no">
+
+            <div class="my-padding">
+                <input type="submit" value="Agregar" class="my-button" />
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

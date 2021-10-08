@@ -1,0 +1,42 @@
+[
+  {
+    "my_id": 134579,
+    "name": "tenis nike 300",
+    "amount": 3,
+    "category": "zapatos",
+    "photo_id": "zapatos",
+    "desactualizar": "no"
+  },
+  {
+    "my_id": 134580,
+    "name": "crema dental",
+    "amount": 4,
+    "category": "hogar",
+    "photo_id": "cremaDental",
+    "desactualizar": "no"
+  },
+  {
+    "my_id": 134581,
+    "name": "olla arrocera",
+    "amount": 5,
+    "category": "hogar",
+    "photo_id": "ollaArrocera",
+    "desactualizar": "no"
+  },
+  {
+    "my_id": 134582,
+    "name": "preservativos",
+    "amount": 6,
+    "category": "hogar",
+    "photo_id": "condoms",
+    "desactualizar": "no"
+  },
+  {
+    "my_id": 134583,
+    "name": "velez cuero negro",
+    "amount": 2,
+    "category": "zapatos",
+    "photo_id": "velezNegros",
+    "desactualizar": "si"
+  }
+]
