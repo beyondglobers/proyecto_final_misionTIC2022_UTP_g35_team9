@@ -45,13 +45,14 @@ var url = urlMongoAtlas;
 
 router.get('/', async (req, res) => {
 
-  console.log("/");
+  console.log("/inicio");
   
 
   const myObjStr = JSON.stringify(req.body);
   var myObjStrParsed = JSON.parse(myObjStr);
 
   const tasks = await Task.find();
+  console.log(tasks);
 
   res.render('category', { tasks: tasks, category: 'Top ventas' });
 
