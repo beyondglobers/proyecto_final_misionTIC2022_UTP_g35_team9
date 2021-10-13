@@ -41,6 +41,9 @@ var urlencodedparser = bodyParser.urlencoded({ extended: false });
 const urlMongoAtlas = "mongodb+srv://acpm1:12345@cluster0.bmqt1.mongodb.net/stockUpdate?retryWrites=true&w=majority";
 var url = urlMongoAtlas;
 
+// const url = process.env.urlMongoAtlas;
+
+
 // // Routes
 
 router.get('/', async (req, res) => {
@@ -52,7 +55,7 @@ router.get('/', async (req, res) => {
   var myObjStrParsed = JSON.parse(myObjStr);
 
   const tasks = await Task.find();
-  console.log(tasks);
+  // console.log(tasks);
 
   res.render('category', { tasks: tasks, category: 'Top ventas' });
 

@@ -27,7 +27,12 @@ const mongoose = require('mongoose');
 //   db.close();
 // });
 
-const url2 = 'mongodb://localhost:27017/stockUpdate';
+///////////////////////////
+
+// const url2 = 'mongodb://localhost:27017/stockUpdate';
+
+const urlMongoAtlas = "mongodb+srv://acpm1:12345@cluster0.bmqt1.mongodb.net/stockUpdate?retryWrites=true&w=majority"
+var url2 = urlMongoAtlas;
 
 mongo.connect(url2, function (err, db) {
   if (err) throw err;

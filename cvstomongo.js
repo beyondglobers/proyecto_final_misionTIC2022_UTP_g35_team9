@@ -10,6 +10,8 @@ const path = require("path");
 const urlMongoAtlas = "mongodb+srv://acpm1:12345@cluster0.bmqt1.mongodb.net/stockUpdate?retryWrites=true&w=majority"
 var url = urlMongoAtlas;
 
+// const url = process.env.urlMongoAtlas;
+
 function saveDB(file_name) {
 	
 var dbname = path.parse(file_name).name;
