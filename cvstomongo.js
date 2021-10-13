@@ -4,8 +4,11 @@ const mongodb = require("mongodb").MongoClient;
 const csvtojson = require("csvtojson");
 const path = require("path");
 // let url = "mongodb://username:password@localhost:27017/";
-const url = "mongodb://localhost:27017/";
 
+// var url = "mongodb://localhost:27017/";
+
+const urlMongoAtlas = "mongodb+srv://acpm1:12345@cluster0.bmqt1.mongodb.net/stockUpdate?retryWrites=true&w=majority"
+var url = urlMongoAtlas;
 
 function saveDB(file_name) {
 	

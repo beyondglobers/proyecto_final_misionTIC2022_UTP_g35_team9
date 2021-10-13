@@ -15,10 +15,21 @@ bodyParser = require('body-parser');
 
 
 // allyson 
+var mongo = require('mongodb').MongoClient;
 const mongoose = require('mongoose');
 
 //conectar base de datos
-const url2 = 'mongodb://localhost:27017/stockUpdate';
+// const url2 = 'mongodb://localhost:27017/stockUpdate';
+
+const urlMongoAtlas = "mongodb+srv://acpm1:12345@cluster0.bmqt1.mongodb.net/stockUpdate?retryWrites=true&w=majority";
+var url2 = urlMongoAtlas;
+
+mongo.connect(url2, function (err, db) {
+  if (err) throw err;
+  console.log("stockUpdate created!");
+  db.close();
+});
+
 mongoose.connect(url2, {
   useUnifiedTopology: true,
   useNewUrlParser: true
@@ -26,6 +37,7 @@ mongoose.connect(url2, {
   .then(db => console.log('Connected'))
   .catch(err => console.log(err));
 //
+
 
 // app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -40,7 +52,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //
-var indexRouter = require('./routes/index2');
+var indexRouter = require('./routes/index_entregable');
 // var usersRouter = require('./routes/users');
 
 // Static Files
